@@ -1,6 +1,6 @@
 import { assert } from 'chai';
-import { checkAdultSite, checkSiteSafety, urlExists } from '../src';
-import { ADULT, API_KEY } from './constants';
+import { checkAdultSite, urlExists } from '../src';
+// import { ADULT, API_KEY } from './constants';
 
 const sites = {
   google: 'https://www.google.com',
@@ -35,14 +35,14 @@ describe('**** url-verify test ****', () => {
   });
 
   // check site safety
-  it('should test checkSiteSafety function', (done) => {
-    checkSiteSafety(sites.google, obj)
-      .then((isSafe) => {
-        const expectedVal = true;
-        assert(isSafe === expectedVal, `should return ${expectedVal}`);
-        done();
-      }).catch(done);
-  });
+  // it('should test checkSiteSafety function', (done) => {
+  //   checkSiteSafety(sites.google, obj)
+  //     .then((isSafe) => {
+  //       const expectedVal = true;
+  //       assert(isSafe === expectedVal, `should return ${expectedVal}`);
+  //       done();
+  //     }).catch(done);
+  // });
 
   // check urlExists
   it('should test urlExists function', (done) => {
