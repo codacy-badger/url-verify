@@ -8,11 +8,11 @@ const sites = {
   notUrl: 'https://www.example.com/not'
 };
 
-const obj = {
-  apiKey: API_KEY,
-  appName: 'test',
-  appVersion: '1.0.0'
-};
+// const obj = {
+//   apiKey: API_KEY,
+//   appName: 'test',
+//   appVersion: '1.0.0'
+// };
 
 describe('**** url-verify test ****', () => {
   // checkAdultSite
