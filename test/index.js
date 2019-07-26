@@ -4,7 +4,7 @@ import { checkAdultSite, urlExists } from '../src';
 
 const sites = {
   google: 'https://www.google.com',
-  adult: ADULT,
+  // adult: ADULT,
   notUrl: 'https://www.example.com/not'
 };
 
@@ -25,14 +25,14 @@ describe('**** url-verify test ****', () => {
       }).catch(done);
   });
 
-  it('should test checkAdultSite function', (done) => {
-    checkAdultSite(sites.adult)
-      .then((isAdult) => {
-        const expectedVal = true;
-        assert(isAdult === expectedVal, `should return ${expectedVal}`);
-        done();
-      }).catch(done);
-  });
+  // it('should test checkAdultSite function', (done) => {
+  //   checkAdultSite(sites.adult)
+  //     .then((isAdult) => {
+  //       const expectedVal = true;
+  //       assert(isAdult === expectedVal, `should return ${expectedVal}`);
+  //       done();
+  //     }).catch(done);
+  // });
 
   // check site safety
   // it('should test checkSiteSafety function', (done) => {
